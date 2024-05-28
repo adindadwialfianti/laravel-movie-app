@@ -19,7 +19,7 @@
                             </nav>
                         </div>
                         <!-- Breadcrumb End -->
-
+                        
                         <!-- ====== Table Section Start -->
                         <div class="flex flex-col gap-10">
                             <!-- ====== Table Two Start -->
@@ -54,28 +54,28 @@
                                                 <img src="src/images/movie/{{ $review['Poster']}}" alt="Product" />
                                             </div>
                                             <p class="text-sm font-medium text-black dark:text-white">
-                                            {{$review['ID']}}
+                                            {{$review->id}}
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-span-2 items-center sm:flex">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$review['Movie']}}
+                                        {{$review->movie}}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$review['User']}}
+                                        {{$review->user}}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$review['Rating']}}
+                                        {{$review->rating}}
                                         </p>
                                     </div>
                                     <div class="col-span-2 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$review['Date']}}
+                                        {{$review->date}}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">

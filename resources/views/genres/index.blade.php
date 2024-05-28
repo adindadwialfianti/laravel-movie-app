@@ -19,7 +19,7 @@
                             </nav>
                         </div>
                         <!-- Breadcrumb End -->
-                        @foreach ($genres as $genre)
+                
                         <!-- ====== Table Section Start -->
                         <div class="flex flex-col gap-10">
                             <!-- ====== Table Two Start -->
@@ -29,7 +29,7 @@
                                         <p class="font-medium">ID</p>
                                     </div>
                                     <div class="col-span-2 items-center sm:flex">
-                                        <p class="font-medium">Anime Name</p>
+                                        <p class="font-medium">Name</p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
                                         <p class="font-medium">Description</p>
@@ -39,25 +39,23 @@
                                     </div>
                                 </div>
 
+                                @foreach ($genres as $genre)
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="col-span-1 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                             <p class="text-sm font-medium text-black dark:text-white">
-                                            {{$genre['ID']}}
+                                            {{$genre->id}}
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-span-2 items-center sm:flex">
-                                            <div class="w-12 rounded-md">
-                                            <img src="src/images/movie/{{ $genre['Poster']}}" alt="Product" />
-                                            </div>
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$genre['Name']}}
+                                        {{$genre->name}}
                                         </p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                        {{$genre['Description']}}
+                                        {{$genre->description}}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
