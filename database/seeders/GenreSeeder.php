@@ -16,8 +16,7 @@ class GenreSeeder extends Seeder
         Genre::create([
             'id' => 1,
             'name' => 'action',
-            'description' => 'Jojos Bizarre Adventure is a story about the Joestar family
-            ',
+            'description' => 'Jojos Bizarre Adventure is a story about the Joestar family',
         ]);
 
         Genre::create([

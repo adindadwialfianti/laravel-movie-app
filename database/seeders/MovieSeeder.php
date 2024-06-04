@@ -35,5 +35,19 @@ class MovieSeeder extends Seeder
             'poster' => 'movie-03.jpg',
             'synopsis' => 'Haruka Sakura wants nothing to do with weaklings—hes only interested in the strongest of the strong.',
         ]);
+        Movie::create([
+            'id' => 4,
+            'title' => 'Wind Breaker',
+            'genre_id' => '3',
+            'poster' => 'movie-03.jpg',
+            'synopsis' => 'Haruka Sakura wants nothing to do with weaklings—hes only interested in the strongest of the strong.',
+        ]);
+        Movie::create([
+            'id' => 5,
+            'title' => 'Wind Breaker',
+            'genre_id' => '3',
+            'poster' => 'movie-03.jpg',
+            'synopsis' => 'Haruka Sakura wants nothing to do with weaklings—hes only interested in the strongest of the strong.',
+        ]);
     }
 }
