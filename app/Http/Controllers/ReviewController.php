@@ -37,17 +37,16 @@ class ReviewController extends Controller
 
         public function edit(Review $review)  
     {  
-    $reviews = Review::all();  
-    return view('reviews.edit', compact('review', 'reviews'));  
+    $movies = Movie::all();  
+    return view('reviews.edit', compact('review', 'movies'));  
     }  
   
-    public function update(Request $request,  $review)  
+    public function update(Request $request, Review  $review)  
     {  
     $validatedData = $request->validate([  
-        'title' => 'required',  
-        'genre_id' => 'required',  
-        'poster' => 'required',  
-        'synopsis' => 'required',  
+            'user' => 'required',
+            'rating' => 'required',
+            'date' => 'required',  
     ]);  
   
     $review->update($validatedData);  
